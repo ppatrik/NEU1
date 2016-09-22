@@ -2,17 +2,17 @@
 
 ## Syntax
 
-*Vektor*
+**Vektor**
 ```
 a=[1 2 3]
 ```
 
-*Matica*
+**Matica**
 ```
 aa=[1 2 3;4 5 6; 6 7 8]
 ```
 
-*Transponovanie*
+**Transponovanie**
 ```
 a'
 aa'
