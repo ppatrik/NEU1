@@ -69,6 +69,20 @@ for j=1:N+3
     end;
 end;
 
-z=Stav(N,4,1,ed,Stavy,Prahy,w)
+z=Stav(N,4,1,ed,Stavy,Prahy,w);
 
 % dokoncit vypocet DU
+
+xx=[1 0 1 1 0 0]'; % skumane slovo
+Stavy(N+1)=xx(1);
+for iii=1:size(xx)
+    x=xx(iii);
+    Stavyn(N+3)=Stav(N,N+3,x,ed,Stavy,Prahy,w);
+    Stavyn(N+2)=Stav(N,N+2,x,ed,Stavy,Prahy,w);
+    % tu pride vypocet novych stavov od i =1:N pocitam podla funkcie
+    for iiii=1:N
+        Stavyn(iiii)=Stav(N,iiii,x,ed,Stavy,Prahy,w);
+    end
+    Stavyn
+    Stavy=Stavyn;
+end
