@@ -19,4 +19,3 @@ function [ stv ] = Stav( N, ii, x, ed, Stavy, Prahy, w )
     end
     stv=Sta;
 end
-
