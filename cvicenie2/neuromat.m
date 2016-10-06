@@ -29,8 +29,6 @@ for k=1:size(Hrany)
     ed(j,i)=1;
 end;
 
-Hrany
-
 % Vypocet d
 for i=1:N+3
    d(i)=0;
@@ -72,13 +70,12 @@ for j=1:N+3
     end;
 end;
 
-z=Stav(N,4,1,ed,Stavy,Prahy,w);
+z=Stav(N,1,1,ed,Stavy,Prahy,w)
 
 
-Prahy
 % dokoncit vypocet DU
 
-xx=[1 0 0 1 1 0 0 1 1]'; % skumane slovo
+xx=[1 0 1 1 1]'; % skumane slovo
 Stavy(N+1)=xx(1);
 for iii=1:size(xx)
     x=xx(iii);
