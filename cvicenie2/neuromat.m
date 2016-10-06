@@ -56,7 +56,7 @@ for i=1:N+3
             w(i,N+1)=d(i);
             Prahy(i)=d(i)+1;
         elseif Typy(i)==0
-            w(i,N+1)=d(i);
+            w(i,N+1)=-d(i);
             Prahy(i)=1;
         end;
         
@@ -74,9 +74,11 @@ end;
 
 z=Stav(N,4,1,ed,Stavy,Prahy,w);
 
+
+Prahy
 % dokoncit vypocet DU
 
-xx=[1 0 1 1 0 0 1 1]'; % skumane slovo
+xx=[1 0 0 1 1 0 0 1 1]'; % skumane slovo
 Stavy(N+1)=xx(1);
 for iii=1:size(xx)
     x=xx(iii);
