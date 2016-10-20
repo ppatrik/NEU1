@@ -32,3 +32,5 @@ plot(xx(:,1), xx(:, 2), 'o', 'MarkerSize', 8, 'MarkerFaceColor', 'red')
 % nastavenie súradníc
 axis([-4 10 -3 10])
 ```
+
+http://octave.sourceforge.net/nnet/index.html
