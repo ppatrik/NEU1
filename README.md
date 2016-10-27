@@ -33,4 +33,10 @@ plot(xx(:,1), xx(:, 2), 'o', 'MarkerSize', 8, 'MarkerFaceColor', 'red')
 axis([-4 10 -3 10])
 ```
 
-http://octave.sourceforge.net/nnet/index.html
+## NNet rozšírenie pre octave
+
+Stiahneme balíček [tu](nnet-0.1.13.tar.gz) a inštalácia príkazom v octave
+```
+pkg install nnet-0.1.13.tar.gz
+```
+Zdroj rozšírenia: http://octave.sourceforge.net/nnet/index.html
